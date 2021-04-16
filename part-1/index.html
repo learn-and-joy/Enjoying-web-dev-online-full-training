@@ -1,0 +1,340 @@
+<!DOCTYPE html> 
+<html>
+
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- <abbr> Abréviation -->
+            <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+        
+        <!-- <blockquote> Citation (longue -->
+            <figure>
+                <blockquote cite="https://www.huxley.net/bnw/four.html">
+                    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                </blockquote>
+                <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+            </figure>
+        
+        <!-- <cite>Citation du titre d'une œuvre ou d'un évènement -->
+            <blockquote>
+                <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+                <footer>
+                    First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).
+                </footer>
+            </blockquote>
+        
+        <!-- <q> Citation (courte) -->
+            <p>WWF's goal is to:
+            <q>Build a future where people live in harmony with nature.</q>
+            We hope they succeed.</p>
+        
+        <!-- <sup>Exposant -->
+            <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
+            <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+        
+        <!-- <sub>Indice -->
+            <p>Almost every developer's favorite molecule is
+            C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+        
+        <strong>Mise en valeur forte
+        <em>Mise en valeur normale
+        <mark>Mise en valeur visuelle
+        <h1>Titre de niveau 1
+        <h2>Titre de niveau 2
+        <h3>Titre de niveau 3
+        <h4>Titre de niveau 4
+        <h5>Titre de niveau 5
+        <h6>Titre de niveau 6
+        <img/>Image
+
+        <!-- <figure>Figure (image, code, etc.) -->
+            <figure>
+                <img src="./img/target (2).png" alt="Elephant at sunset"  style="width: 200px;">
+                <figcaption>An elephant at sunset</figcaption>
+            </figure>
+        
+        <!-- <figcaption> Description de la figure -->
+            <figure>
+                <img src="./img/img_girl.jpg" alt="Girl in a jacket" width="250" height="300">
+
+                <figcaption>An elephant at sunset</figcaption>
+            </figure>
+        
+        <!-- <source> Format source pour les balises <audio>  et <video> -->
+        <!-- <audio> Son -->
+            <figure>
+                <figcaption>Listen to the T-Rex:</figcaption>
+                <audio
+                    controls
+                    src="/media/cc0-audio/t-rex-roar.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+            </figure>
+        
+        <!-- <video> Vidéo -->
+            <video controls width="300">
+                <source src="https://www.youtube.com/watch?v=9g5JL2KEdww&ab_channel=ZakiRb" type="video/webm">
+                <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+            
+        
+        <!-- <a>Lien hypertexte -->
+            <p>You can reach Michael at:</p>
+            <ul>
+                <li><a href="https://example.com">Website</a></li>
+                <li><a href="mailto:m.bluth@example.com">Email</a></li>
+                <li><a href="tel:+123456789">Phone</a></li>
+            </ul>
+        
+        
+        <!-- <br />Retour à la ligne -->
+        <!-- <p>Paragraphe -->
+        <!-- <hr />Ligne de séparation horizontale -->
+        
+        <!-- <address>Adresse de contact -->
+            <p>Contact the author of this page:</p>
+            <address>
+                <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                <a href="tel:+13115552368">(311) 555-2368</a>
+            </address>
+        
+        <!-- <del>Texte supprimé -->
+        <!-- <ins>Texte inséré -->
+            <blockquote>
+                There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
+            </blockquote>
+        
+        
+        <!-- <dfn>Définition --> machi mafhoum
+            <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+        
+        <!-- <kbd>Saisie clavier -->
+            <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+        
+        <!-- <pre>Affichage formaté (pour les codes sources) -->
+            <pre>
+            L          TE
+                A       A
+                C    V
+                R A
+                DOU
+                LOU
+                REUSE
+                QUE TU
+                PORTES
+                ET QUI T'
+                ORNE O CI
+                VILISÉ
+                OTE-  TU VEUX
+                LA    BIEN
+                SI      RESPI
+                        RER       - Apollinaire
+            </pre>
+        
+        <!-- <progress>Barre de progression -->
+            <label for="file">File progress:</label>
+            <progress id="file" max="100" value="70"> 70% </progress>
+        
+        
+        <!-- <time>Date ou heure -->
+            <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+            <p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+        
+
+
+--------------------------------------------------------------------
+
+
+            
+        <!-- Balises de listes -->
+
+        <!-- <ul> unordered list, Liste à puces, non numérotée -->
+        <!-- <li> list item, Élément de la liste à puces -->
+            <ul>
+                <li>Milk</li>
+                <li>Cheese
+                    <ul>
+                        <li>Blue cheese</li>
+                        <li>Feta</li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        <!-- <ol> ordered list, Liste numérotée -->
+            <ol>
+                <li>Mix flour, baking powder, sugar, and salt.</li>
+                <li>In another bowl, mix eggs, milk, and oil.</li>
+                <li>Stir both mixtures together.</li>
+                <li>Fill muffin tray 3/4 full.</li>
+                <li>Bake for 20 minutes.</li>
+            </ol>
+                
+
+        <!-- <dl>description list, Liste de définitions -->
+        <!-- <dt>defines terms, Terme à définir ( terme d'une description ) -->
+        <!-- <dd>definition description, Définition du terme -->
+
+            <p>Cryptids of Cornwall:</p>
+            <dl>
+                <dt>Beast of Bodmin</dt>
+                <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+                <dt>Morgawr</dt>
+                <dd>A sea serpent.</dd>
+
+                <dt>Owlman</dt>
+                <dd>A giant owl-like creature.</dd>
+            </dl>
+
+
+--------------------------------------------------------------------
+
+session 3
+        <!-- Balises de tableau -->
+
+        <!-- <table>Tableau -->
+        <!-- <caption>Titre du tableau -->
+        <!-- <tr> table row, Ligne de tableau -->
+        <!-- <th> table head, Cellule d'en-tête -->
+        <!-- <td> table Data, Cellule -->
+        <!-- <thead>Section de l'en-tête du tableau -->
+        <!-- <tbody>Section du corps du tableau -->
+        <!-- <tfoot>Section du pied du tableau -->
+
+        <table border="true">
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th scope="col">Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stationery</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Totals</th>
+                    <td>21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+
+
+        --------------------------------------------------------------------
+        
+        <!-- Balises de formulaire
+
+        <textarea>Zone de saisie multiligne
+
+        <form>Formulaire
+
+        <fieldset>Groupe de champs
+
+        <legend>Titre d'un groupe de champs
+
+        <label>Libellé d'un champ
+
+        <input />Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
+
+
+        <select>Liste déroulante
+
+        <option>Élément d'une liste déroulante
+
+        <optgroup>Groupe d'éléments d'une liste déroulante -->
+
+        <label for="story">Tell us your story:</label>
+        <textarea id="story" name="story"
+                rows="5" cols="33">
+        Learn and joy...
+        </textarea>
+
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-example">
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Subscribe!">
+            </div>
+        </form>
+
+        <label for="dino-select">Choose a dinosaur:</label>
+        <select id="dino-select">
+            <optgroup label="Theropods">
+                <option>Tyrannosaurus</option>
+                <option>Velociraptor</option>
+                <option>Deinonychus</option>
+            </optgroup>
+            <optgroup label="Sauropods">
+                <option>Diplodocus</option>
+                <option>Saltasaurus</option>
+                <option>Apatosaurus</option>
+            </optgroup>
+        </select>
+
+        <fieldset>
+            <legend>Choose your favorite monster</legend>
+
+            <input type="radio" id="kraken" name="monster">
+            <label for="kraken">Kraken</label><br/>
+
+            <input type="radio" id="sasquatch" name="monster">
+            <label for="sasquatch">Sasquatch</label><br/>
+
+            <input type="radio" id="mothman" name="monster">
+            <label for="mothman">Mothman</label>
+        </fieldset>
+
+        <!-- Balises sectionnantes ( on verra des exemples quand on emplementera des pages complètes ) -->
+        <!-- <header>En-tête
+        
+        <nav>Liens principaux de navigation
+        
+        <footer>Pied de page
+        
+        <section>Section de page
+        
+        <article>Article (contenu autonome)
+        
+        <aside>Informations complémentaires -->
+        
+        
+        
+        Balises génériques
+        <!-- <span>Balise générique de type inline -->
+        <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span class="ingredient">garlic</span> to a blender and blend into a paste.</p>
+        
+        <!-- <div>Balise générique de type block -->
+        <div class="warning">
+            <img src="/media/examples/leopard.jpg"
+                 alt="An intimidating leopard.">
+            <p>Beware of the leopard</p>
+        </div>
+
+    </body>
+
+</html>
