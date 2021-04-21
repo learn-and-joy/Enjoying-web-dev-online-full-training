@@ -1,0 +1,232 @@
+
+            
+    <!-- Balises de listes -->
+
+    <!-- <ul> unordered list, Liste à puces, non numérotée -->
+    <!-- <li> list item, Élément de la liste à puces -->
+        <ul>
+            <li>Milk</li>
+            <li>Cheese
+                <ul>
+                    <li>Blue cheese</li>
+                    <li>Feta</li>
+                </ul>
+            </li>
+        </ul>
+
+
+    <!-- <ol> ordered list, Liste numérotée -->
+        <ol>
+            <li>Mix flour, baking powder, sugar, and salt.</li>
+            <li>In another bowl, mix eggs, milk, and oil.</li>
+            <li>Stir both mixtures together.</li>
+            <li>Fill muffin tray 3/4 full.</li>
+            <li>Bake for 20 minutes.</li>
+        </ol>
+            
+
+    <!-- <dl>description list, Liste de définitions -->
+    <!-- <dt>defines terms, Terme à définir ( terme d'une description ) -->
+    <!-- <dd>definition description, Définition du terme -->
+
+        <p>Cryptids of Cornwall:</p>
+        <dl>
+            <dt>Beast of Bodmin</dt>
+            <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+            <dt>Morgawr</dt>
+            <dd>A sea serpent.</dd>
+
+            <dt>Owlman</dt>
+            <dd>A giant owl-like creature.</dd>
+        </dl>
+
+
+    
+--------------------------------------------------------------------
+
+        <!-- Balises de tableau -->
+
+        <!-- <table>Tableau -->
+        <!-- <caption>Titre du tableau -->
+        <!-- <tr> table row, Ligne de tableau -->
+        <!-- <th> table head, Cellule d'en-tête -->
+        <!-- <td> table Data, Cellule -->
+        <!-- <thead>Section de l'en-tête du tableau -->
+        <!-- <tbody>Section du corps du tableau -->
+        <!-- <tfoot>Section du pied du tableau -->
+
+        <table border="true">
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th scope="col">Expenditure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stationery</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Totals</th>
+                    <td>21,000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+        <!-- Balises sectionnantes ( on verra des exemples quand on emplementera des pages complètes ) -->
+        <!-- <header>En-tête
+        
+        <nav>Liens principaux de navigation
+        
+        <footer>Pied de page
+        
+        <section>Section de page
+        
+        <article>Article (contenu autonome)
+        
+        <aside>Informations complémentaires -->
+        
+        
+        Balises génériques
+        <!-- <span>Balise générique de type inline -->
+        <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span class="ingredient">garlic</span> to a blender and blend into a paste.</p>
+        
+        <!-- <div>Balise générique de type block -->
+        <div class="warning">
+            <img src="/media/examples/leopard.jpg"
+                 alt="An intimidating leopard.">
+            <p>Beware of the leopard</p>
+        </div>
+
+
+    
+        <!-- more -->
+        What does colspan= do?
+            Allows a single table cell to span the width of more than one cell or column.
+        What does rowspan= do?
+            Allows a single table cell to span the height of more than one cell or row.
+
+        <table border> <caption>Life Expectancy By Current Age</caption>
+            <tr> 
+                <th colspan="2">65</th> 
+                <th colspan="2">40</th> 
+                <th colspan="2">20</th> 
+            </tr> 
+            <tr> 
+                    <th>Men</th> 
+                    <th>Women</th>
+                    <th>Men</th> 
+                    <th>Women</th> 
+                    <th>Men</th> 
+                    <th>Women</th> 
+            </tr> 
+            <tr> 
+                <td>82</td> 
+                <td>85</td> 
+                <td>78</td> 
+                <td>82</td> 
+                <td>77</td> 
+                <td>81</td> 
+            </tr> 
+        </table>
+
+
+        <TABLE border="0">
+
+            <TR> <TD>A</TD> <TD>B</TD> <TD>C</TD> <TD>D</TD> <TD>E</TD> </TR>
+    
+            <TR> <TD rowspan=2>F</TD> <TD>G</TD> <TD colspan=3>H</TD> </TR>
+    
+            <TR> <TD>I</TD> <TD>J</TD> <TD colspan=2 rowspan=2>K</TD> </TR>
+    
+            <TR> <TD>L</TD> <TD>M</TD> <TD>N</TD> </TR>
+
+        </TABLE>
+
+
+
+
+        CSS:
+
+        <!-- CSS Syntax -->
+        Le sélecteur pointe vers l'élément HTML que vous souhaitez styliser.
+
+        Le bloc de déclaration contient une ou plusieurs déclarations séparées par des points-virgules.
+
+        Chaque déclaration comprend un nom de propriété CSS et une valeur, séparés par deux points.
+
+        Les déclarations CSS multiples sont séparées par des points-virgules et les blocs de déclaration sont entourés d'accolades.
+
+        exemple:
+        p {
+            color: red;
+            text-align: center;
+          }
+
+
+        Comment ajouter du CSS:
+        - Inline CSS: En utisant la proprieté style a l'interieur de la balise html sible
+                <h1 style="color:blue; font-size: 12px;" >title</h1>
+        - Internal CSS: En utisant la balise style dans la balise <head>
+        - External CSS: En utilisant un fichier css externe <link rel="stylesheet" href="mystyle.css">
+
+        NB: 
+        Si le style interne est défini après le lien vers la feuille de style externe, les éléments <h1> seront "orange":
+            html:
+                <head>
+                    <link rel="stylesheet" type="text/css" href="mystyle.css">
+                    <style>
+                    h1 {
+                    color: orange;
+                    }
+                    </style>
+                </head>
+            css:
+                body {
+                    background-color: lightblue;
+                }
+                
+                h1 {
+                    color: navy;
+                    margin-left: 20px;
+                }
+        Cependant, si le style interne est défini avant le lien vers la feuille de style externe, les éléments <h1> seront "navy":
+            html:
+                <head>
+                    <link rel="stylesheet" type="text/css" href="mystyle.css">
+                    <style>
+                    h1 {
+                    color: orange;
+                    }
+                    </style>
+                </head>
+            css:
+                body {
+                    background-color: lightblue;
+                }
+                
+                h1 {
+                    color: navy;
+                    margin-left: 20px;
+                }
+
+        Cascading Order
+            Quel style sera utilisé lorsque plusieurs styles seront spécifiés pour un élément HTML?
+                    
+            Tous les styles d'une page seront "cascade" dans une nouvelle feuille de style "virtuelle" selon les règles suivantes, où le numéro un a la priorité la plus élevée:
+        
+            Style en ligne (à l'intérieur d'un élément HTML)
+            Feuilles de style externes et internes (dans la section head)
+            Navigateur par défaut
+
+
